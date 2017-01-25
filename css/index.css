@@ -1,0 +1,49 @@
+/*THIS IS THE HOME PAGE STUFF*/
+
+.subj-btn {
+    width: 100%; 
+    padding-bottom: 3%;
+}
+
+
+
+.header {
+    margin-bottom: 10%; 
+}
+
+.jpn-logo {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%; 
+}
+
+
+.footer {
+    /*center it*/ 
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-bottom: 3%;
+    padding-top: 6%;
+}
+/*THIS IS IN BOTH TEMPLE/DAY-OF PAGE STUFF*/
+.img-text {
+    width:100%;
+}
+
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sections {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*THIS IS THE TEMPLE PAGE STUFF*/
+
+
+
+
+/*THIS IS THE DAY-IN-THE-LIFE-OF PAGE STUFF*/
+
