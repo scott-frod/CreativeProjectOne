@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8"/>
+		<link type="text/css" rel="stylesheet" href="index.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style type = "text/css">
+      #reveal {
+        display: none;
+      }
+		</style>
+
+		<title> Topaz Museum of Japanese Internment Camps</title>
+	</head>
+	<body>
+		<div id="menu">
+			<ul>
+				<li><a href="http://ec2-50-112-21-115.us-west-2.compute.amazonaws.com/Lab2/">Home</a></li>
+				<li><a href="">Temple</a></li>
+				<li><a href="http://ec2-35-167-162-79.us-west-2.compute.amazonaws.com/creativeLabOne/pages.html#">Food</a></li>
+				<li><a href="http://ec2-50-112-21-115.us-west-2.compute.amazonaws.com/Lab2/partials/temple.html#">DITL</a></li>
+			</ul>
+		</div>
+		<div class="container text-head">
+      <div class="row">
+        <img class="subj-btn col-sm-12 col-lg-6" src="topaz_pics/welcome.jpg" alt=""/>
+        <h1 class="sections"> Topaz Museum <br> of the Japanese Internment Camp</h1>
+        <p class="text"> Captivity in the Land of the Free</p>
+      </div>
+      <div class="row">
+        <p class="sections"> History </p>
+         <p class="text"> One little known piece of American history is that, shortly following<br>
+          the attacks on Pearl Harbour, Japanese Americans and Americans of <br>
+          Japanese Descent were forced to leave their homes and occupy small <br>
+          camps for extended and indefinite amounts of time. Come find out <br>
+          about this chapter in American history by visiting us!
+        </p>
+       <img class="subj-btn col-sm-12 col-lg-6" src="topaz_pics/japanese-family.jpg" alt=""/>
+       <p class="text"> Topaz is only one of the many Japanese Internment Camps <br> that you can visit throughout the country</p>
+       <p class="text"> Click on the picture below to reveal our contact info</p>
+      </div>
+      <div class="row">
+        <img id="clickable" class="subj-btn col-sm-12 col-lg-6" src="topaz_pics/relocation camps.gif" alt=""/>
+      </div>
+      <div class="row">
+        <img style="height:100px;width:125px;" class="subj-btn col-sm-12 col-lg-6" src="topaz_pics/topaz-front.jpg" alt=""/>
+      </div>
+      <div id="reveal">
+        <div class="row">
+          <p class="sections"> Location </p>
+          <p class="text"> 55 West Main, Delta, UT </p>
+        </div>
+        <div class="row">
+          <p class="sections"> Hours <p>
+          <p class="text"> 11:00 - 5:00 Monday - Saturday </p>
+        </div>
+        <div class="row">
+          <p class="sections"> Contact <p>
+          <p class="text">(435) 864-2514</p>
+        </div>
+      </div>
+    </div>
+    <script type = "text/javascript">
+			var clickableImage = document.getElementById("clickable");
+			var onImgClick = function() { document.getElementById("reveal").style.display = "block"; };
+			clickableImage.addEventListener("click",onImgClick);
+		</script>
+	</body>
+</html
