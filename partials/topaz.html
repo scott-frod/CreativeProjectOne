@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8"/>
+		<link type="text/css" rel="stylesheet" href="index.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style type = "text/css">
+			#city-list li { display: none; }
+			#city-list li.match { display: list-item; }
+      #no-match li { display: none; }
+      #no-match li.match { display: list-item; }
+		</style>
+
+		<title> Topaz Museum of Japanese Internment Camps</title>
+	</head>
+	<body>
+		<div id="menu">
+			<ul>
+				<li><a href="http://ec2-50-112-21-115.us-west-2.compute.amazonaws.com/Lab2/">Home</a></li>
+				<li><a href="">Temple</a></li>
+				<li><a href="http://ec2-35-167-162-79.us-west-2.compute.amazonaws.com/creativeLabOne/pages.html#">Food</a></li>
+				<li><a href="http://ec2-50-112-21-115.us-west-2.compute.amazonaws.com/Lab2/partials/temple.html#">DITL</a></li>
+			</ul>
+		</div>
+		<div class="container text-head">
+      <div class="row">
+        <img class="subj-btn col-sm-12 col-lg-6" src="topaz_pics/welcome.jpg" alt=""/>
+        <h1 class="sections"> Topaz Museum <br> of the Japanese Internment Camp</h1>
+        <p class="text"> Captivity in the Land of the Free</p>
+      </div>
+      <div class="row">
+        <p class="sections"> History </p>
+         <p class="text"> One little known piece of American history is that, shortly following<br>
+          the attacks on Pearl Harbour, Japanese Americans and Americans of <br>
+          Japanese Descent were forced to leave their homes and occupy small <br>
+          camps for extended and indefinite amounts of time. Come find out <br>
+          about this chapter in American history by visiting us!
+        </p>
+       <img class="subj-btn col-sm-12 col-lg-6" src="topaz_pics/japanese-family.jpg" alt=""/>
+       <p class="text"> Topaz is only one of the many Japanese Internment Camps <br> that you can visit throughout the country</p>
+      </div>
+            <div class="row">
+        <img class="subj-btn col-sm-12 col-lg-6" src="topaz_pics/relocation camps.gif" alt=""/>
+      </div>
+      <div class="row">
+        <img style="height:100px;width:125px;" class="subj-btn col-sm-12 col-lg-6" src="topaz_pics/topaz-front.jpg" alt=""/>
+      </div>
+      <div class="row">
+        <p class="sections"> Location </p>
+        <p class="text"> 55 West Main, Delta, UT </p>
+      </div>
+      <div class="row">
+        <p class="sections"> Hours <p>
+        <p class="text"> 11:00 - 5:00 Monday - Saturday </p>
+      </div>
+      <div class="row">
+        <p class="sections"> Contact <p>
+        <p class="text">(435) 864-2514</p>
+      </div>
+    </div>
+    <div class="row">
+      <p class="text"> Type the name of a city in the box below to see if there is one near you</p>
+      <input id = "prefix">
+      <ul class="text" id = "city-list">
+        <li>Manazar, CA</li>
+        <li>Tule Lake, CA</li>
+        <li>Minidoka, ID</li>
+        <li>Topaz, UT</li>
+        <li>Poston, AZ</li>
+        <li>Gila River, AZ</li>
+        <li>Amache, CO</li>
+        <li>Heart Mountain, WY</li>
+        <li>Rohwer, MI</li>
+        <li>Jerome, MI</li>
+      </ul>
+    </div>
+       <ul class="text" id = "no-match">
+          <li> No match, sorry!! </li>
+        </ul>
+    <script type = "text/javascript">
+			var prefix = document.getElementById("prefix");
+			var cities = document.getElementById("city-list").children;
+      //var noMatch = document.getElementById("no-match").children;
+			var markMatches = function()
+			{
+				for (var i = 0; i < cities.length; i++)
+				{
+						cities[i].className = "";
+				}
+        //noMatch[0].className = "";
+				var thePrefix = prefix.value;
+				if (thePrefix.length > 0)
+				{
+          var x = 0;
+					for (var i = 0; i < cities.length; i++)
+					{
+						if (cities[i].textContent.startsWith(thePrefix))
+						{
+							cities[i].className = "match";
+           //   x = 1;
+						}
+         }
+          if (x)
+          {
+            noMatch[0].className = "match";
+          }
+          
+        }
+        prefix.addEventListener("keyup",markMatches);
+		</script>
+	</body>
+</html
